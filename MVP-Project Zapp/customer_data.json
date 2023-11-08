@@ -1,0 +1,302 @@
+{
+    "1": {
+        "name": "Max Mustermann",
+        "age": 34,
+        "occupation": "Software Developer",
+        "address": "123 Yonge St, Toronto, ON M5E 1W7",
+        "account_number": "5271139528",
+        "username": "maxmustermann76",
+        "password": "wAWmXQBj",
+        "account_balance": 6615.59
+    },
+    "2": {
+        "name": "Erika Mustermann",
+        "age": 29,
+        "occupation": "Data Scientist",
+        "address": "456 Granville St, Vancouver, BC V6C 1V4",
+        "account_number": "6413755928",
+        "username": "erikamustermann97",
+        "password": "3gSQfz7z",
+        "account_balance": 4029.83
+    },
+    "3": {
+        "name": "Karl Schmidt",
+        "age": 45,
+        "occupation": "Civil Engineer",
+        "address": "789 8 Ave SW, Calgary, AB T2P 1H5",
+        "account_number": "9860092589",
+        "username": "karlschmidt61",
+        "password": "GL2O8HOa",
+        "account_balance": 3058.36
+    },
+    "4": {
+        "name": "Anna Becker",
+        "age": 31,
+        "occupation": "Marketing Specialist",
+        "address": "101 Queen St, Ottawa, ON K1P 1J9",
+        "account_number": "8306086669",
+        "username": "annabecker38",
+        "password": "vI3kcPJw",
+        "account_balance": 8769.58
+    },
+    "5": {
+        "name": "Hans Mcller",
+        "age": 38,
+        "occupation": "Graphic Designer",
+        "address": "202 Main St, Halifax, NS B3J 3S9",
+        "account_number": "5138512460",
+        "username": "hansmcller83",
+        "password": "zhz5ycMH",
+        "account_balance": 9715.4
+    },
+    "6": {
+        "name": "Marie Schneider",
+        "age": 28,
+        "occupation": "Project Manager",
+        "address": "303 Portage Ave, Winnipeg, MB R3B 2B4",
+        "account_number": "4883238640",
+        "username": "marieschneider43",
+        "password": "W6MjpVhV",
+        "account_balance": 8762.37
+    },
+    "7": {
+        "name": "Thomas Wagner",
+        "age": 52,
+        "occupation": "Accountant",
+        "address": "404 King St W, Kitchener, ON N2G 1B7",
+        "account_number": "2873883318",
+        "username": "thomaswagner78",
+        "password": "3HML0doE",
+        "account_balance": 5031.74
+    },
+    "8": {
+        "name": "Julia Meyer",
+        "age": 26,
+        "occupation": "Web Developer",
+        "address": "505 St Clair Ave W, Toronto, ON M6C 1A1",
+        "account_number": "1723073399",
+        "username": "juliameyer21",
+        "password": "zR1P7Y4f",
+        "account_balance": 494.04
+    },
+    "9": {
+        "name": "Friedrich Bauer",
+        "age": 43,
+        "occupation": "Product Manager",
+        "address": "606 12 Ave SE, Calgary, AB T2G 1A5",
+        "account_number": "1264449266",
+        "username": "friedrichbauer31",
+        "password": "fz7IWbOo",
+        "account_balance": 8487.69
+    },
+    "10": {
+        "name": "Elisabeth Klein",
+        "age": 36,
+        "occupation": "HR Specialist",
+        "address": "707 Robson St, Vancouver, BC V6Z 1A7",
+        "account_number": "9245062120",
+        "username": "elisabethklein21",
+        "password": "eUoebEjH",
+        "account_balance": 730.2
+    },
+    "11": {
+        "name": "User11",
+        "age": 31,
+        "occupation": "Occupation11",
+        "address": "808 Fort St, Victoria, BC V8W 1H8",
+        "account_number": "0241202850",
+        "username": "user1155",
+        "password": "gwAGA3o5",
+        "account_balance": 2621.64
+    },
+    "12": {
+        "name": "User12",
+        "age": 35,
+        "occupation": "Occupation12",
+        "address": "909 3rd Ave, Saskatoon, SK S7K 2H7",
+        "account_number": "9340659005",
+        "username": "user1221",
+        "password": "AEohEn1r",
+        "account_balance": 5680.08
+    },
+    "13": {
+        "name": "User13",
+        "age": 62,
+        "occupation": "Occupation13",
+        "address": "1010 4th St SW, Calgary, AB T2R 0X9",
+        "account_number": "8042719079",
+        "username": "user1381",
+        "password": "6T6Ab8ve",
+        "account_balance": 530.04
+    },
+    "14": {
+        "name": "User14",
+        "age": 35,
+        "occupation": "Occupation14",
+        "address": "1111 Lakeshore Blvd W, Toronto, ON M6K 3L3",
+        "account_number": "4704526509",
+        "username": "user1429",
+        "password": "ZxjOqESK",
+        "account_balance": 1430.64
+    },
+    "15": {
+        "name": "User15",
+        "age": 57,
+        "occupation": "Occupation15",
+        "address": "1212 Douglas St, Victoria, BC V8W 2E5",
+        "account_number": "7815985330",
+        "username": "user1552",
+        "password": "VTXl0tIr",
+        "account_balance": 5383.61
+    },
+    "16": {
+        "name": "User16",
+        "age": 43,
+        "occupation": "Occupation16",
+        "address": "1313 8th St E, Saskatoon, SK S7H 0T2",
+        "account_number": "1384187295",
+        "username": "user1644",
+        "password": "7ts9ii8D",
+        "account_balance": 1132.1
+    },
+    "17": {
+        "name": "User17",
+        "age": 57,
+        "occupation": "Occupation17",
+        "address": "1414 17 Ave SW, Calgary, AB T2T 0C3",
+        "account_number": "6175710745",
+        "username": "user1738",
+        "password": "QHrbTw5L",
+        "account_balance": 7552.44
+    },
+    "18": {
+        "name": "User18",
+        "age": 51,
+        "occupation": "Occupation18",
+        "address": "1515 West Georgia St, Vancouver, BC V6G 2V1",
+        "account_number": "7039699616",
+        "username": "user1869",
+        "password": "ZowiaIlK",
+        "account_balance": 6840.93
+    },
+    "19": {
+        "name": "User19",
+        "age": 24,
+        "occupation": "Occupation19",
+        "address": "1616 Broad St, Regina, SK S4P 1X7",
+        "account_number": "6068799849",
+        "username": "user1991",
+        "password": "8u1Xp2XV",
+        "account_balance": 9261.32
+    },
+    "20": {
+        "name": "User20",
+        "age": 31,
+        "occupation": "Occupation20",
+        "address": "1717 22nd St W, Saskatoon, SK S7M 0S9",
+        "account_number": "0454350032",
+        "username": "user2087",
+        "password": "KWI3UCnQ",
+        "account_balance": 2099.68
+    },
+    "21": {
+        "name": "User21",
+        "age": 37,
+        "occupation": "Occupation21",
+        "address": "1818 Cornwall Ave, Vancouver, BC V6J 1C7",
+        "account_number": "4936671813",
+        "username": "user2142",
+        "password": "gOlbgoq8",
+        "account_balance": 7015.89
+    },
+    "22": {
+        "name": "User22",
+        "age": 28,
+        "occupation": "Occupation22",
+        "address": "1919 10th Ave SW, Calgary, AB T3C 0K4",
+        "account_number": "5279222639",
+        "username": "user2281",
+        "password": "Ge2POC8T",
+        "account_balance": 7704.61
+    },
+    "23": {
+        "name": "User23",
+        "age": 54,
+        "occupation": "Occupation23",
+        "address": "2020 12th Ave, Regina, SK S4P 0M3",
+        "account_number": "2488413557",
+        "username": "user2317",
+        "password": "ZmGoh8ar",
+        "account_balance": 161.04
+    },
+    "24": {
+        "name": "User24",
+        "age": 32,
+        "occupation": "Occupation24",
+        "address": "2121 Heather St, Vancouver, BC V5Z 0B9",
+        "account_number": "9645401993",
+        "username": "user2451",
+        "password": "Srd1YbGY",
+        "account_balance": 4591.11
+    },
+    "25": {
+        "name": "User25",
+        "age": 51,
+        "occupation": "Occupation25",
+        "address": "2222 6th Ave, Regina, SK S4R 1B2",
+        "account_number": "6849877654",
+        "username": "user2589",
+        "password": "4XtbIcRn",
+        "account_balance": 3791.91
+    },
+    "26": {
+        "name": "User26",
+        "age": 30,
+        "occupation": "Occupation26",
+        "address": "2323 Dundas St W, Toronto, ON M6R 1X4",
+        "account_number": "5486261166",
+        "username": "user2616",
+        "password": "E0aPJhky",
+        "account_balance": 7864.29
+    },
+    "27": {
+        "name": "User27",
+        "age": 24,
+        "occupation": "Occupation27",
+        "address": "2424 32 Ave NE, Calgary, AB T2E 6T4",
+        "account_number": "2852419438",
+        "username": "user2721",
+        "password": "oDDvCA3S",
+        "account_balance": 5491.07
+    },
+    "28": {
+        "name": "User28",
+        "age": 19,
+        "occupation": "Occupation28",
+        "address": "2525 36 St NE, Calgary, AB T1Y 5T4",
+        "account_number": "7268218974",
+        "username": "user2894",
+        "password": "M1rWrKaK",
+        "account_balance": 6120.65
+    },
+    "29": {
+        "name": "User29",
+        "age": 29,
+        "occupation": "Occupation29",
+        "address": "2626 Portage Ave, Winnipeg, MB R3J 0P8",
+        "account_number": "6040913835",
+        "username": "user2978",
+        "password": "xJeLe4Z2",
+        "account_balance": 2082.77
+    },
+    "30": {
+        "name": "User30",
+        "age": 55,
+        "occupation": "Occupation30",
+        "address": "2727 Queen St E, Toronto, ON M4E 1H1",
+        "account_number": "6904638916",
+        "username": "user3098",
+        "password": "sK467BN1",
+        "account_balance": 508.76
+    }
+}

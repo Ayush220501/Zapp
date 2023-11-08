@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zapp Bank Chatbot</title>  <!-- Title of the webpage -->
+    <!-- CSS styles for styling the doc -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        #chatbox {
+            height: 800px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .message {
+            margin: 10px 0;
+        }
+        .message.bot {
+            text-align: left;
+        }
+        .message.user {
+            text-align: right;
+        }
+        .message .text {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 20px;
+            max-width: 80%;
+        }
+        .message.bot .text {
+            background-color: #e6e6e6;
+            color: #000000;
+        }
+        .message.user .text {
+            background-color: #0f2027;
+            color: #ffffff;
+        }
+        .message .timestamp {
+            font-size: 0.8em;
+            color: #777777;
+        }
+        #userInput {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #textInput {
+            width: 80%;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+        }
+        #buttonInput {
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: #000000;
+            color: #ffffff;
+            cursor: pointer;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease;
+        }
+        #buttonInput:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .feedback-buttons {
+            display: none;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .feedback-buttons button, .more-question-buttons button {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            background-color: #ffffff;
+            color: #000000;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .feedback-buttons button:hover, .more-question-buttons button:hover {
+            background-color: #e6e6e6;
+        }
+        .more-question-buttons {
+            display: none;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body> <!-- Body of the HTML document -->
+    <div id="chatbox"></div> <!-- Div element for the chatbox -->
+    <form id="userInput" onsubmit="event.preventDefault(); sendCustomerMessage();"> 
+        <input id="textInput" type="text" name="msg" placeholder="Message" autocomplete="off"> <!-- User message input field -->
+        <input id="buttonInput" type="button" value="Send" onclick="sendCustomerMessage()"> <!-- Button to send the message. When clicked, it calls the sendCustomerMessage function -->
+    </form>
+    <script>
+        var chatbox = document.getElementById("chatbox");
+        var feedbackButtons = document.createElement("div");
+        feedbackButtons.classList.add("feedback-buttons");
+        var moreQuestionButtons = document.createElement("div");
+        moreQuestionButtons.classList.add("more-question-buttons");
+
+        var awaitingAdditionalFeedback = false;
+
+        var hasAskedIfMoreQuestions = false;
+
+        /* Handles sending of the customer's message to the server and displaying the response */
+        function sendCustomerMessage() {
+            var userInput = document.getElementById("textInput");
+            var userText = userInput.value;
+            userInput.value = "";
+
+            if (awaitingAdditionalFeedback) {
+                appendMessage("You provided additional feedback: " + userText, "user");
+                awaitingAdditionalFeedback = false; 
+            } else {
+                appendMessage(userText, "user");
+
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "/get_customer_response", true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText).response;
+                        appendMessage(response, "bot");
+
+                        if (!hasAskedIfMoreQuestions) {
+                            appendMessage("Do you have any more questions?", "bot");
+                            showMoreQuestionButtons();
+                            hasAskedIfMoreQuestions = true;
+                        }
+                    }
+                };
+                xhr.send(JSON.stringify({ msg: userText }));
+            }
+        }
+        /* Displays the buttons for asking if the user has more questions */
+        function showMoreQuestionButtons() {
+            moreQuestionButtons.innerHTML = `
+                <button onclick="handleMoreQuestions('Yes')">Yes</button>
+                <button onclick="handleMoreQuestions('No')">No</button>
+            `;
+            moreQuestionButtons.style.display = "flex"; // showing the buttons
+            chatbox.appendChild(moreQuestionButtons);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+        /* Handles the user's response to the "Do you have any more questions?" prompt */
+        function handleMoreQuestions(answer) {
+            moreQuestionButtons.style.display = "none"; // hiding the buttons agains
+            feedbackButtons.style.display = "none"; // also hiding feedback buttons
+            appendMessage(answer, "user"); // User's response to "Do you have any more questions?"
+
+            if (answer === 'No') {
+                appendMessage("Thank you! Could you please provide your feedback?", "bot");
+                showFeedbackButtons();
+            } else {
+                appendMessage("Great! Please ask another question.", "bot");
+                hasAskedIfMoreQuestions = false; // Reset flag so we can ask if they have more questions
+            }
+        }
+
+         /* Takes a message and its sender as parameters and appends the message to the chatbox. */
+        function appendMessage(message, sender) {
+            var messageElement = document.createElement("div");
+            messageElement.classList.add("message", sender);
+
+            var textElement = document.createElement("div");
+            textElement.classList.add("text");
+            textElement.textContent = message;
+
+            var timestampElement = document.createElement("span");
+            timestampElement.classList.add("timestamp");
+            timestampElement.textContent = getCurrentTimeString();
+
+            messageElement.appendChild(textElement);
+            messageElement.appendChild(timestampElement);
+            
+            chatbox.appendChild(messageElement);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        /* Returns the current time as a string in the format "HH:MM" */
+        function getCurrentTimeString() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+
+            return hours + ':' + minutes;
+        }
+
+        /* Displays the emoji buttons for user feedback */
+        function showFeedbackButtons() {
+            feedbackButtons.innerHTML = `
+                <button onclick="handleFeedback('😃')">😃</button>
+                <button onclick="handleFeedback('😊')">😊</button>
+                <button onclick="handleFeedback('😐')">😐</button>
+                <button onclick="handleFeedback('😔')">😔</button>
+                <button onclick="handleFeedback('😞')">😞</button>
+            `;
+            feedbackButtons.style.display = "flex";  // Add this line to show the buttons
+            chatbox.appendChild(feedbackButtons);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        /* Creates and displays an input field for additional feedback */
+        function showAdditionalFeedbackInput() {
+            var feedbackInput = document.createElement("input");
+            feedbackInput.setAttribute("id", "additionalFeedbackInput");
+            feedbackInput.setAttribute("type", "text");
+            feedbackInput.setAttribute("placeholder", "Type your feedback here...");
+
+            var feedbackSubmitButton = document.createElement("button");
+            feedbackSubmitButton.setAttribute("onclick", "submitAdditionalFeedback()");
+            feedbackSubmitButton.textContent = "Submit Feedback";
+
+            var additionalFeedbackForm = document.createElement("div");
+            additionalFeedbackForm.appendChild(feedbackInput);
+            additionalFeedbackForm.appendChild(feedbackSubmitButton);
+
+            chatbox.appendChild(additionalFeedbackForm);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        /* Handles the user's feedback and asks for additional feedback if necessary */
+        function handleFeedback(feedback) {
+            feedbackButtons.style.display = "none";
+
+            if (feedback === '😃' || feedback === '😊') {
+                appendMessage("We're glad we could help you! Could you please provide any additional feedback?", "bot");
+            } else {
+                appendMessage("We're sorry to hear that. Could you please provide any additional feedback to help us improve?", "bot");
+            }
+
+            awaitingAdditionalFeedback = true;
+        }
+
+        /* Handles the user's additional feedback */
+        function submitAdditionalFeedback() {
+            var additionalFeedback = document.getElementById("additionalFeedbackInput").value;
+            appendMessage("You provided additional feedback: " + additionalFeedback, "user");
+        }
+
+        //Displaying the initial bot message
+        var botMessage = "{{ bot_message }}";
+        appendMessage(botMessage, "bot"); 
+
+    </script>
+</body>
+</html>

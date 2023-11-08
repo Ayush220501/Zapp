@@ -1,0 +1,641 @@
+{
+  "Authenticate": [
+    {
+      "User": "I want to log in.",
+      "Bot": "Great! Please provide your username and password to continue."
+    },
+    {
+      "User": "Log in",
+      "Bot": "Of course. Please enter your login details to access your account."
+    },
+    {
+      "User": "Start session",
+      "Bot": "Welcome back! Kindly enter your credentials to begin your session."
+    },
+    {
+      "User": "Access account",
+      "Bot": "Let's get you into your account. Please type in your username and password."
+    },
+    {
+      "User": "I need to check my account.",
+      "Bot": "Sure thing. Please log in with your username and password first."
+    },
+    {
+      "User": "Sign in",
+      "Bot": "Ready when you are. Please enter your sign-in information."
+    },
+    {
+      "User": "I'd like to authenticate my account.",
+      "Bot": "Absolutely, let's verify your identity. Please enter your username and password."
+    },
+    {
+      "User": "Login",
+      "Bot": "Please login by entering your username and password to proceed."
+    },
+    {
+      "User": "I need to authenticate.",
+      "Bot": "Understood. Please provide your login details to authenticate."
+    },
+    {
+      "User": "Let's begin",
+      "Bot": "To begin, please enter your username and password to log in."
+    }
+  ],
+  "Check Balance": [
+    {
+      "User": "What's my balance?",
+      "Bot": "Your current balance is [balance amount]. Do you need further assistance?"
+    },
+    {
+      "User": "Can you tell me my account balance?",
+      "Bot": "Certainly! Your account balance is [balance amount]. Is there anything else I can help you with?"
+    },
+    {
+      "User": "I'd like to know my balance.",
+      "Bot": "As of now, your balance stands at [balance amount]. Would you like to perform any other operations?"
+    },
+    {
+      "User": "Balance check",
+      "Bot": "Your balance is [balance amount]. Would you like to make a transaction or need more information?"
+    },
+    {
+      "User": "How much money do I have in my account?",
+      "Bot": "Your account shows a balance of [balance amount]. What else can I do for you today?"
+    },
+    {
+      "User": "Show balance",
+      "Bot": "Sure, your available balance is [balance amount]. Any other queries or transactions?"
+    },
+    {
+      "User": "Account balance, please.",
+      "Bot": "Right now, your account balance is [balance amount]. Any further actions you'd like to take?"
+    },
+    {
+      "User": "Need to check my balance.",
+      "Bot": "Of course. Your current balance is [balance amount]. Need help with anything else?"
+    },
+    {
+      "User": "What's in my account right now?",
+      "Bot": "You currently have [balance amount] in your account. Would you like to go over recent transactions or need assistance with something else?"
+    },
+    {
+      "User": "Give me my balance details.",
+      "Bot": "Your account balance as of today is [balance amount]. Would you like to update your passbook or need more services?"
+    }
+  ],
+  "View Transactions": [
+    {
+      "User": "Can I see my recent transactions?",
+      "Bot": "Absolutely, here are the details of your recent transactions: [transaction details]. Anything else you need?"
+    },
+    {
+      "User": "Show me my last few transactions.",
+      "Bot": "You got it. Your latest transactions are as follows: [transaction details]. What next can I assist with?"
+    },
+    {
+      "User": "I need to review my past transactions.",
+      "Bot": "Of course. Your transaction history is as follows: [transaction details]. Would you like to query a specific transaction?"
+    },
+    {
+      "User": "Transaction history, please.",
+      "Bot": "Here are the recent transactions from your account: [transaction details]. Let me know if you need more information."
+    },
+    {
+      "User": "What transactions have I made recently?",
+      "Bot": "Here's a summary of your recent transactions: [transaction details]. Is there a particular transaction you're concerned about?"
+    },
+    {
+      "User": "List my recent spending.",
+      "Bot": "Sure thing. Your recent spending looks like this: [transaction details]. Do you want to flag any of these transactions?"
+    },
+    {
+      "User": "I'd like to go over my recent transactions.",
+      "Bot": "Certainly. Your most recent transactions are: [transaction details]. Please tell me if you need more details."
+    },
+    {
+      "User": "Show recent transactions.",
+      "Bot": "Right away. Your recent transactions are: [transaction details]. Would you like to conduct another operation?"
+    },
+    {
+      "User": "Display my transaction log.",
+      "Bot": "Here is your transaction log: [transaction details]. Would you like to search for a specific date range?"
+    },
+    {
+      "User": "What's my transaction history?",
+      "Bot": "Your transaction history is as follows: [transaction details]. If you need to dispute any transaction, just let me know."
+    }
+  ],
+  "Make a Payment": [
+    {
+      "User": "I want to pay a bill.",
+      "Bot": "Sure, I can help with that. Please provide the payee's details and the amount."
+    },
+    {
+      "User": "Initiate a payment.",
+      "Bot": "Of course, who would you like to send the payment to, and how much?"
+    },
+    {
+      "User": "Send money to someone.",
+      "Bot": "I can do that for you. Please enter the recipient's information and the payment amount."
+    },
+    {
+      "User": "I need to transfer money.",
+      "Bot": "Certainly. Please enter the recipient's account details and the amount to transfer."
+    },
+    {
+      "User": "Process a payment.",
+      "Bot": "I'm ready to assist. Who are we paying today, and how much should we send?"
+    },
+    {
+      "User": "Pay an invoice.",
+      "Bot": "Let's get that invoice paid. Please provide the details of the invoice and the amount due."
+    },
+    {
+      "User": "I have to make a payment.",
+      "Bot": "I'll help you with that. Please provide the payment details including the payee and the amount."
+    },
+    {
+      "User": "I'd like to send a payment.",
+      "Bot": "Happy to help. Please fill in the payee's details and the amount you wish to pay."
+    },
+    {
+      "User": "Make a payment for me.",
+      "Bot": "Absolutely, who is the payment going to and for what amount?"
+    },
+    {
+      "User": "I want to settle a bill.",
+      "Bot": "Let's take care of that. Please give me the details of the bill and the payment amount."
+    }
+  ],
+  "Ask for Help": [
+    {
+      "User": "Could use some help here.",
+      "Bot": "I'm at your service. Tell me what you need assistance with, please."
+    },
+    {
+      "User": "Assist me with my account.",
+      "Bot": "I'd be happy to. What account details do you need help with?"
+    },
+    {
+      "User": "I'm having trouble with a feature.",
+      "Bot": "Let's sort that out. Which feature are you trying to use?"
+    },
+    {
+      "User": "Help me understand this.",
+      "Bot": "Of course, what do you need clarification on?"
+    },
+    {
+      "User": "I need information on a service.",
+      "Bot": "Sure thing. What service would you like to know more about?"
+    },
+    {
+      "User": "Can you guide me through this process?",
+      "Bot": "Certainly, which process do you need guidance on?"
+    },
+    {
+      "User": "I'm not sure what to do.",
+      "Bot": "No problem. I'm here to guide you. What are you trying to accomplish?"
+    },
+    {
+      "User": "Show me how to do this.",
+      "Bot": "I can do that. What is it that you're trying to do?"
+    },
+    {
+      "User": "I need help navigating your services.",
+      "Bot": "I can navigate you through our services. Which service are you interested in?"
+    },
+    {
+      "User": "I'm lost, help me.",
+      "Bot": "Don't worry, you're not alone. What do you need help with?"
+    }
+  ],
+  "End Session": [
+    {
+      "User": "That's all for now.",
+      "Bot": "Alright, if you need any more help, just ask. Goodbye!"
+    },
+    {
+      "User": "Close this chat.",
+      "Bot": "Session closed. Have a great day ahead!"
+    },
+    {
+      "User": "I'm done here.",
+      "Bot": "Okay, if you have any more questions later, I'm here to help. Bye!"
+    },
+    {
+      "User": "Exit.",
+      "Bot": "Exiting now. Thank you for using our services!"
+    },
+    {
+      "User": "End chat.",
+      "Bot": "Chat ended. Don't hesitate to return if you need more assistance."
+    },
+    {
+      "User": "I want to stop now.",
+      "Bot": "Sure, you can come back anytime. Take care!"
+    },
+    {
+      "User": "Log me out.",
+      "Bot": "You've been logged out. Thank you for banking with us!"
+    },
+    {
+      "User": "Goodbye.",
+      "Bot": "Goodbye! If you ever need assistance again, just say the word."
+    },
+    {
+      "User": "I've finished.",
+      "Bot": "Great, if there's anything else we can help you with in the future, just ask. Farewell!"
+    },
+    {
+      "User": "That's it for today.",
+      "Bot": "Understood. We're here whenever you need us. Goodbye!"
+    }
+  ],
+  "Escalate to Human": [
+    {
+      "User": "This requires a person's touch.",
+      "Bot": "I'll connect you with one of our customer service representatives who can provide a personal touch."
+    },
+    {
+      "User": "Connect me with a support agent.",
+      "Bot": "I am transferring you to a support agent right now. Please wait a moment."
+    },
+    {
+      "User": "I think I need to speak with a human now.",
+      "Bot": "Sure thing, I am here to connect you with our support staff. One moment, please."
+    },
+    {
+      "User": "Can I get a human on here?",
+      "Bot": "Absolutely, I am transferring you to one of our team members. They will take over from here."
+    }
+    {
+      "User": "I want to talk to a person.",
+      "Bot": "I understand. I'm connecting you with one of our team members right now."
+    },
+    {
+      "User": "Can I speak to a human?",
+      "Bot": "Of course, transferring you to a human representative immediately."
+    },
+    {
+      "User": "This is complex, I need a human.",
+      "Bot": "Understood, let me transfer you to someone who can help with complex issues."
+    },
+    {
+      "User": "Need to talk to a real person.",
+      "Bot": "Connecting you to a real person, one moment please."
+    },
+    {
+      "User": "Your help isn’t enough. Human please.",
+      "Bot": "I'm sorry to hear that. Let me get a human colleague to assist you further."
+    },
+    {
+      "User": "Agent.",
+      "Bot": "Redirecting you to an agent now, please hold."
+    },
+    {
+      "User": "I prefer a human assistant.",
+      "Bot": "No problem, I'm transferring you to one of our human assistants."
+    },
+    {
+      "User": "Transfer me to someone.",
+      "Bot": "Transferring you to a member of our team, just a moment."
+    }
+  ],
+  "Provide Feedback": [
+    {
+      "User": "I want to give feedback.",
+      "Bot": "Your feedback is valuable to us. Please go ahead and share your thoughts."
+    },
+    {
+      "User": "Can I leave a review?",
+      "Bot": "Certainly, we appreciate your input. What would you like to share about your experience?"
+    },
+    {
+      "User": "How do I provide feedback?",
+      "Bot": "You can provide feedback right here. What's on your mind?"
+    },
+    {
+      "User": "Feedback",
+      "Bot": "I'm ready to record your feedback. Please tell me more about your experience."
+    },
+    {
+      "User": "I have some comments for you.",
+      "Bot": "We're all ears. What comments would you like to provide?"
+    },
+    {
+      "User": "I'd like to report a problem.",
+      "Bot": "I'm here to help. Please describe the problem you encountered."
+    },
+    {
+      "User": "I have suggestions.",
+      "Bot": "Great, we're always looking to improve. What suggestions do you have?"
+    },
+    {
+      "User": "Your service was excellent.",
+      "Bot": "That's wonderful to hear! We'd love more detail so we can keep up the good work."
+    },
+    {
+      "User": "Your service needs improvement.",
+      "Bot": "We're sorry to hear that. Could you provide more detail so we can address the issues?"
+    },
+    {
+      "User": "Rate service",
+      "Bot": "Of course, how would you rate the service you received today on a scale from 1 to 5?"
+    }
+  ],
+  "Access Account Information": [
+    {
+      "User": "I need details about my account.",
+      "Bot": "Certainly, what specific details are you looking for?"
+    },
+    {
+      "User": "Show my account info.",
+      "Bot": "Here's the information available for your account: [account details]."
+    },
+    {
+      "User": "What's my account status?",
+      "Bot": "Your account status is currently [status details]. Is there anything specific you'd like to know?"
+    },
+    {
+      "User": "Can I get my account summary?",
+      "Bot": "Absolutely, your account summary is as follows: [summary details]."
+    },
+    {
+      "User": "I'd like to review my account settings.",
+      "Bot": "Of course, here are your current account settings: [settings details]."
+    },
+    {
+      "User": "Account details, please.",
+      "Bot": "Sure thing. Your account details are: [details]. Do you need anything else?"
+    },
+    {
+      "User": "Pull up my account data.",
+      "Bot": "Right away. Here is the data associated with your account: [data details]."
+    },
+    {
+      "User": "I want to check my account features.",
+      "Bot": "Certainly, you have the following features available on your account: [features list]."
+    },
+    {
+      "User": "Show my account's recent activity.",
+      "Bot": "Here's the recent activity on your account: [activity details]."
+    },
+    {
+      "User": "I want to see my account's balance history.",
+      "Bot": "Your balance history for the past [time period] is as follows: [history details]."
+    }
+  ],
+  "Set Alerts": [
+    {
+      "User": "How do I set up an alert for my account?",
+      "Bot": "You can set alerts easily. What type of alert would you like to set up?"
+    },
+    {
+      "User": "I want to get notified of large transactions.",
+      "Bot": "Sure, I can set an alert for transactions over a certain amount. What threshold are you thinking of?"
+    },
+    {
+      "User": "Alert me for any deposits.",
+      "Bot": "I've set up an alert to notify you of any deposits into your account. Anything else?"
+    },
+    {
+      "User": "Can I have an alert for my balance?",
+      "Bot": "Absolutely, I can set an alert for when your balance goes above or below a certain figure. Which would you prefer?"
+    },
+    {
+      "User": "I need a daily balance alert.",
+      "Bot": "A daily balance alert has been set up. You'll receive your balance every day. Any other alerts you need?"
+    },
+    {
+      "User": "Notify me when I receive a payment.",
+      "Bot": "I will set up a notification for when you receive a payment. Any specific details you want included?"
+    },
+    {
+      "User": "Set an alert for low balance.",
+      "Bot": "I've set a low balance alert for you. At what balance would you like to be notified?"
+    },
+    {
+      "User": "I want alerts for all account activity.",
+      "Bot": "You will now receive alerts for all account activity. Do you want to exclude any regular transactions?"
+    },
+    {
+      "User": "Create an overdraft alert.",
+      "Bot": "An overdraft alert will be sent to you. Do you want to set a specific overdraft amount before the alert triggers?"
+    },
+    {
+      "User": "Alert me for foreign transactions.",
+      "Bot": "I've enabled alerts for foreign transactions. You will be notified of any international activity in your account."
+    }
+  ],
+  "Change Password": [
+    {
+      "User": "I need to change my password.",
+      "Bot": "Let's update your password. Can you first confirm your current password for security purposes?"
+    },
+    {
+      "User": "How do I update my password?",
+      "Bot": "To update your password, I'll guide you through the steps. What would you like your new password to be?"
+    },
+    {
+      "User": "Password change.",
+      "Bot": "You can change your password here. Please enter a new password that includes letters, numbers, and symbols."
+    },
+    {
+      "User": "I want to reset my password.",
+      "Bot": "I can help with that. Please provide the answer to your security question to reset your password."
+    },
+    {
+      "User": "Set a new password.",
+      "Bot": "Creating a strong new password is important. Please type in your new password now."
+    },
+    {
+      "User": "Change my login details.",
+      "Bot": "To change your login details, please first confirm your identity with your current password."
+    },
+    {
+      "User": "I forgot my password.",
+      "Bot": "No problem. Let's reset it. Please verify your identity with your account number and registered email."
+    },
+    {
+      "User": "Update my password.",
+      "Bot": "To update your password, please enter the new password twice for confirmation."
+    },
+    {
+      "User": "I need a stronger password.",
+      "Bot": "A strong password is key to account security. Please choose a new password that is difficult to guess."
+    },
+    {
+      "User": "Make my password different.",
+      "Bot": "Changing your password regularly is a good practice. Please enter your old password followed by the new one."
+    }
+  ],
+  "Inquire About Services": [
+    {
+      "User": "Can you explain your wealth management services?",
+      "Bot": "Certainly! Our wealth management services include personalized investment strategies, financial planning, and portfolio management. Would you like to schedule a meeting with one of our advisors?"
+    },
+    {
+      "User": "What types of savings accounts do you offer?",
+      "Bot": "We offer a variety of savings accounts including high-yield, standard, and savings accounts for children. Would you like to compare them?"
+    },
+    {
+      "User": "Do you offer online banking?",
+      "Bot": "Yes, we provide a full suite of online banking services that allow you to manage your finances remotely. Would you like a demo?"
+    },
+    {
+      "User": "Explain how your overdraft protection works.",
+      "Bot": "Overdraft protection is a service that prevents your account from going into the negative. It links to another account or a line of credit to cover transactions. Shall I go into more detail?"
+    },
+    {
+      "User": "Do you have educational resources for banking?",
+      "Bot": "We do. We offer online tutorials, webinars, and one-on-one financial coaching sessions. Interested in any of these?"
+    },
+    {
+      "User": "What are the features of your mobile app?",
+      "Bot": "Our mobile app features include bill pay, account transfers, mobile deposit, and customizable alerts. Would you like to know how to use any specific feature?"
+    },
+    {
+      "User": "Can you tell me about your credit card offers?",
+      "Bot": "Certainly! We offer credit cards with various rewards programs, including cash back and travel points. Interested in applying for one?"
+    },
+    {
+      "User": "I want to know about your investment products.",
+      "Bot": "Our investment products range from mutual funds and stocks to bonds and ETFs. Would you like to speak with an investment advisor for more information?"
+    },
+    {
+      "User": "Do you provide loans for small businesses?",
+      "Bot": "Yes, we have several loan options for small businesses, including term loans and lines of credit. Would you like more details on these?"
+    },
+    {
+      "User": "I'm interested in mortgage services.",
+      "Bot": "We offer competitive mortgage services with various rates and terms. I can connect you with a mortgage specialist to discuss your needs. How does that sound?"
+    }
+  ],
+  "Report Lost Card": [
+    {
+      "User": "I've lost my debit card.",
+      "Bot": "I'm sorry to hear that. I can help you immediately block your card and order a replacement. Shall we proceed with that?"
+    },
+    {
+      "User": "My card has been stolen.",
+      "Bot": "That's concerning. Let's put a stop on your card right now. Would you also like to file a report for any unauthorized transactions?"
+    },
+    {
+      "User": "I can't find my credit card.",
+      "Bot": "Let's act quickly. I will block your credit card to prevent misuse and issue a new one. Do you need assistance with anything else?"
+    },
+    {
+      "User": "Cancel my lost card.",
+      "Bot": "I've canceled your card to protect your account. Would you like to order a new one?"
+    },
+    {
+      "User": "My card is missing.",
+      "Bot": "I will help you with that. Your card will be blocked and we will issue a new one. Is there a recent transaction you don't recognize?"
+    },
+    {
+      "User": "I need to report a lost card.",
+      "Bot": "I'm here to help. I've reported your card as lost and you'll receive a new one shortly. Is there anything else you'd like to do?"
+    },
+    {
+      "User": "Block my card, it's been taken.",
+      "Bot": "Your card has been blocked to prevent any unauthorized use. We can also start the process for a new card. Would you like to proceed?"
+    },
+    {
+      "User": "I think my card has been compromised.",
+      "Bot": "Let's secure your account immediately. I've blocked your card. We'll review any recent transactions together. Shall we?"
+    },
+    {
+      "User": "Deactivate my card, I've lost it.",
+      "Bot": "I've deactivated your card to prevent any fraudulent activity. Would you like to have a new card sent to your registered address?"
+    },
+    {
+      "User": "I need to stop my card, it's gone.",
+      "Bot": "Your card is now stopped. Let's get you a new one and check for any unauthorized transactions. Does that work for you?"
+    }
+  ],
+  "Transfer Funds": [
+    {
+      "User": "I want to transfer money to another account.",
+      "Bot": "Absolutely, please provide the recipient's account details and the amount you wish to transfer."
+    },
+    {
+      "User": "How can I send money to someone?",
+      "Bot": "You can send money by providing me with the recipient's account information and the transfer amount."
+    },
+    {
+      "User": "Initiate a fund transfer for me.",
+      "Bot": "Sure thing. Who are we sending the funds to, and how much would you like to transfer?"
+    },
+    {
+      "User": "I'd like to move some money to my savings.",
+      "Bot": "Of course. How much would you like to transfer to your savings account?"
+    },
+    {
+      "User": "I need to wire money to a friend.",
+      "Bot": "I can help with that. Please enter your friend's account number and the amount."
+    },
+    {
+      "User": "Transfer $500 to my checking account, please.",
+      "Bot": "I'm on it. I'll transfer $500 to your checking account. Would you like to do this now or schedule it for later?"
+    },
+    {
+      "User": "Can I move money from my account to another bank?",
+      "Bot": "Certainly, we can arrange a transfer to another bank. Please provide the other bank's details and the amount."
+    },
+    {
+      "User": "I want to set up a recurring transfer.",
+      "Bot": "Recurring transfers are a great way to manage your finances. How often do you want the transfer to occur, and for what amount?"
+    },
+    {
+      "User": "Show me how to transfer funds.",
+      "Bot": "Let's get you started. You'll need the account number you're transferring to and the amount. Shall we proceed?"
+    },
+    {
+      "User": "Process a transfer from my account.",
+      "Bot": "To process a transfer, I'll need the recipient's account information and the transfer amount. Please provide that when you're ready."
+    }
+  ],
+  "Apply for a Loan": [
+    {
+      "User": "I'm looking to apply for a loan.",
+      "Bot": "I can assist with that. What type of loan are you interested in applying for?"
+    },
+    {
+      "User": "What do I need to do to get a loan?",
+      "Bot": "To start your loan application, you'll need to provide personal and financial information. Shall we begin?"
+    },
+    {
+      "User": "Can you help me with a loan application?",
+      "Bot": "Certainly, I can guide you through the loan application process. Do you know how much you want to borrow?"
+    },
+    {
+      "User": "I need a personal loan.",
+      "Bot": "A personal loan can be used for a variety of purposes. How much do you need, and what's the purpose of the loan?"
+    },
+    {
+      "User": "How do I apply for a home loan?",
+      "Bot": "For a home loan application, you'll need details about your income, employment, and the property. Would you like to start this process?"
+    },
+    {
+      "User": "I want to take out a car loan.",
+      "Bot": "Great, for a car loan, I'll need information about the vehicle and your financial status. Shall we proceed?"
+    },
+    {
+      "User": "Start a loan application for me.",
+      "Bot": "Let's get your loan application started. Which type of loan are you applying for?"
+    },
+    {
+      "User": "What are the requirements for a business loan?",
+      "Bot": "For a business loan, you'll need to provide business financial statements, a business plan, and personal financial details. Ready to go through the details?"
+    },
+    {
+      "User": "I want to know more about student loans.",
+      "Bot": "Student loans can help cover education costs. Would you like to discuss your options and see if you qualify?"
+    },
+    {
+      "User": "Guide me through applying for a loan.",
+      "Bot": "I'd be happy to guide you. We'll need to go through a few steps to gather information for your loan application. Let's get started."
+    }
+  ]
+}
+
