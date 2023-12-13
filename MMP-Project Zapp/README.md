@@ -1,14 +1,15 @@
-# COGNICHAT
+# Project Zapp
 **An Intelligent Chatbot for Personalised Financial Services**
 
 
 **Project Team:**
-1.	Ishika Agarwal (18103034) 
-2.	Devanshi Garg (18103045)
-3.	Riddhi Mahajan (18103110)
-4.	Ishita Arora (18103130)
+Varun Mistry - 100942692 
+Ayush Patel – 100944563
+Kevin Patel-100941716
+Chinedu Omenkukwu - 100805353
 
-**Project Mentor:** Dr. Poonam Saini, Faculty, Computer Science and Engineering
+
+
 
 ## STATEMENT
 
@@ -47,4 +48,3 @@ We aim to build a responsive web application for the same in which we will provi
 ## DELIVERABLES
 
 The user will be able to write his queries in a dialog box. The chatbot will provide the best possible reply to the query and wait for further instructions from the user. The user will be able to get all financial services and advice in a quick and efficient manner.
-
