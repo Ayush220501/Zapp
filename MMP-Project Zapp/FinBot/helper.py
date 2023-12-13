@@ -5,7 +5,7 @@ import json
 import pickle
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.python.keras import Sequential, layers
+from tensorflow.keras import Sequential, layers
 import yaml
 import requests
 #import expenseTrackerFunctions

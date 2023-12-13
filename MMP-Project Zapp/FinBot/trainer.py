@@ -2,8 +2,8 @@ from os.path import join, dirname
 import numpy as np
 import tensorflow as tf
 
-from tensorflow.python.keras.preprocessing.sequence import pad_sequences
-from tensorflow.python.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import Tokenizer
 
 from logzero import logger
 #from app.main.ai 

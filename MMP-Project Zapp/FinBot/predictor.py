@@ -1,6 +1,7 @@
-from tensorflow.python.keras.preprocessing.sequence import pad_sequences
-from tensorflow.python.keras.preprocessing.text import Tokenizer
-from tensorflow import logging
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import Tokenizer
+# from tensorflow 
+import logging
 from logzero import logger
 import pandas as pd
 import numpy as np
@@ -16,7 +17,7 @@ import re
 #trainer.train_intent_model()
 #trainer.train_dialog_model()
 
-logging.set_verbosity(logging.ERROR)
+#  logging.set_verbosity(logging.ERROR)
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 def predict_intent(utterance):

@@ -1,14 +1,14 @@
-# PROJECT ZAPP
+# COGNICHAT
 **An Intelligent Chatbot for Personalised Financial Services**
 
 
 **Project Team:**
-1.	Chinedu Omenkukwu - 100805353
-2.	Ayush Patel - 100944563
-3.	Varun Mistry - 100942692 
-4.	Kevin Patel - 100941716
+1.	Ishika Agarwal (18103034) 
+2.	Devanshi Garg (18103045)
+3.	Riddhi Mahajan (18103110)
+4.	Ishita Arora (18103130)
 
-
+**Project Mentor:** Dr. Poonam Saini, Faculty, Computer Science and Engineering
 
 ## STATEMENT
 
